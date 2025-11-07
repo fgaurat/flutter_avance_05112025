@@ -12,6 +12,10 @@ import 'package:tp_11/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    // AAA: Arrange, Act, Assert
+    
+    
+    
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
