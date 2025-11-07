@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tp_11/screens/todo_list_screen.dart';
+import 'package:tp_11/services/todo_service.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+class MyAppTodoList extends StatelessWidget {
+  const MyAppTodoList({super.key, required this.service});
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final TodoService service;
 
   // This widget is the root of your application.
   @override
@@ -30,13 +30,14 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: TodoListScreen(service: service),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MyHomePageTodoList extends StatefulWidget {
+  const MyHomePageTodoList({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -50,10 +51,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePageTodoList> createState() => _MyHomePageTodoListState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageTodoListState extends State<MyHomePageTodoList> {
   int _counter = 0;
 
   void _incrementCounter() {

@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 import 'dart:ui';
-import 'dart:io'; // pour manipuler les fichiers et URI de test
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

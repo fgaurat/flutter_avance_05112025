@@ -6,7 +6,6 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:tp_11/main.dart';
 
-
 main() {
   testWidgets('golden: écran d\'accueil', (WidgetTester tester) async {
     // AAA: Arrange, Act, Assert
@@ -19,3 +18,4 @@ main() {
       matchesGoldenFile('goldens/counter_initial.png'),
     );
   });
+}
