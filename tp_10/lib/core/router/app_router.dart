@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:tp_10/domain/entities/todo.dart';
 import 'package:tp_10/presentation/cubit/todo_cubit.dart';
 import 'package:tp_10/presentation/pages/todo_detail_page.dart';
 import 'package:tp_10/presentation/pages/todo_form_page.dart';
