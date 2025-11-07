@@ -11,3 +11,7 @@ void main() {
   runApp(MyAppTodoList(service: service));
   // runApp(const MyApp());
 }
+
+void runAppWithService(TodoService service) {
+  runApp(MyAppTodoList(service: service));
+}
