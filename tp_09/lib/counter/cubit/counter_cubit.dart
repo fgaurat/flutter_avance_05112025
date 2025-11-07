@@ -6,7 +6,7 @@ class CounterCubit extends Cubit<int> {
   void increment() => emit(state + 1);
   void decrement() => emit(state - 1);
   void reset() => emit(0);
-  void resetAsync() async {
+  Future<void> resetAsync() async {
     await Future.delayed(Duration(seconds: 1));
     emit(0);
   }
